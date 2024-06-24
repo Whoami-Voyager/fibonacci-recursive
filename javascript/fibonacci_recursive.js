@@ -1,5 +1,11 @@
 function fibonacci(n) {
-  // type your code here
+  if (2 > n) {
+    return n
+  }
+
+  console.log(n)
+
+  return fibonacci(n - 1) + fibonacci(n - 2)
 }
 
 if (require.main === module) {
@@ -22,3 +28,6 @@ module.exports = fibonacci;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+// function intakes number and checks if it is less than 2, and if it is then returns that number
+// otherwise, it stores the last two numbers and recalls the function until it hits the inputted number
